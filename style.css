@@ -1,0 +1,23 @@
+body {
+  background-color: #f2c7ad;
+}
+/* .jumbotron {
+  padding-top: 6rem;
+  background-color: #f2c7ad;
+} */
+
+#projects {
+  background-color: #ffffff;
+}
+
+section {
+  padding-top: 8rem;
+}
+
+#navbar {
+  background-color: #c98358;
+}
+
+footer {
+  background-color: #c98358;
+}
