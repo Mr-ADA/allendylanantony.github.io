@@ -3,73 +3,82 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" />
     <title>Allen Dylan Antony</title>
+    <!-- <script>
+      $("a#resume").attr({
+        target: "_blank",
+        href: "./resume.pdf",
+      });
+    </script> -->
   </head>
   <body id="home">
     <!-- Nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar" style="background-color: transparent">
       <div class="container">
-        <a class="navbar-brand" href="#">Allen Dylan</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#social-media">Social Media</a>
-            </li>
-          </ul>
+        <div class="content-wrapper">
+          <a class="navbar-brand" href="#">Allen Dylan</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <div class="content-wrapper">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-dark" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#tools">Tools</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#experiences">Experiences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#social-media">Let's Connect On</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button id="resume" class="btn justify-content-end" type="button" onclick="window.open('./resume.pdf','_blank')">
+          <span style="color: black">My Resume</span>
+        </button>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
       </div>
     </nav>
     <!-- End of Nav Bar -->
 
     <!-- Jumbotron -->
-
-    <!-- <section class="jumbotron text-center">
-      <img src="img/profile.jpg" alt="Profile Picture" width="200px" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Allen Dylan Antony</h1>
-      <p class="lead">Student | Business Information Systems</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,256L48,213.3C96,171,192,85,288,90.7C384,96,480,192,576,234.7C672,277,768,267,864,234.7C960,203,1056,149,1152,122.7C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section> -->
-
     <section id="jumbotron">
       <div class="container">
         <div class="row">
           <!-- photo column -->
-          <div class="col-md-6 text-center">
-            <img src="img/profile.jpg" alt="Profile Picture" width="350px" class="rounded-circle img-thumbnail" />
+          <div class="col-md-6">
+            <img src="img/profile.jpg" alt="Profile Picture" width="330px" class="shadow-lg rounded-circle" style="margin-left: 70px" />
           </div>
-
           <!-- description column -->
           <div class="col-md-6">
-            <section class="jumbotron text-start">
-              <!-- <img src="img/profile.jpg" alt="Profile Picture" width="200px" class="rounded-circle img-thumbnail" /> -->
-              <h1 class="display-4" style="font-size: 70px">Allen Dylan Antony</h1>
-              <p class="lead" style="font-size: 25px">Student | Business Information Systems</p>
-            </section>
+            <div class="content-wrapper" style="margin-top: 65px">
+              <h1 class="display-4" style="font-size: 44px">Hi,</h1>
+              <h1 class="display-4" style="font-size: 44px">I am Allen Dylan Antony</h1>
+              <div class="card text-center" style="background-color: #f2c7ad">
+                <p class="card-text" style="font-size: 22px">Student | Business Information Systems</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- End of Jumbotron -->
 
     <!-- About Me -->
@@ -77,141 +86,259 @@
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>About Me</h2>
+            <h1>About Me</h1>
           </div>
         </div>
-        <div class="row justify-content-center fs-5">
-          <div class="col-md-6">
-            <p>
-              Hello, Everyone! I am Allen Dylan Antony, A final year student in Singapore Institute of Management (SIM) taking Bachelor of Business Information Systems. Feel free to reach out to me on social media below! Nice to know you
-              all!
-            </p>
-          </div>
-          <div class="col-md-6">
-            <p>
-              This website serves as my portfolio. Inspired by Sandhika Galih from Web Programming UNPAS on Youtube, I started doing this website in a couple of days. Without any prior experience in Bootstrap, this website has become my
-              first project using Bootstrap. I hope you all enjoy my works! Feel free to leave comments on social media I have attached! I really want to know your insights! Cheers!
-            </p>
+        <div class="row text-start mb-3">
+          <div class="col">
+            <div class="card" style="padding: 20px; background-color: #f2c7ad; border-radius: 20px">
+              <span>Hi, welcome to my website!</span>
+              <br />
+              <p>
+                My name is Allen Dylan Antony. A fresh graduate of SIM – UOW Singapore taking Bachelor of Business Information Systems. I am an enthusiastic front-end developer who loves building simplistic yet elegant and responsive
+                websites. Moreover, I am passionate in learning new tools that are currently are needed in the industry.
+              </p>
+              <span>Feel free to contact me on the social media provided below. Additionally, my resume is available for view by clicking the button on the top right-hand corner! </span>
+            </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,160L48,176C96,192,192,224,288,234.7C384,245,480,235,576,208C672,181,768,139,864,112C960,85,1056,75,1152,80C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
     </section>
     <!-- End of About Me-->
 
-    <!-- Projects -->
-    <section id="projects">
+    <!-- Tools -->
+    <section id="tools">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-4">
           <div class="col">
-            <h2>My Experiences</h2>
+            <h1>Tools</h1>
           </div>
-        </div>
-        <div class="row text-center">
-          <h3>Behind the Strings VIII: Sgraffito</h3>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img class="card-img-top" src="img/project1.jpg" alt="Project 1" />
-              <div class="card-body">
-                <p class="card-text">All parties involved in Behind the Strings VIII: Sgraffito.</p>
+          <div class="col-md-2 mb-1">
+            <div class="card" style="border-radius: 100%">
+              <img class="card-img-top" src="img/java.png" alt="Java" style="border-radius: 100%" />
+            </div>
+          </div>
+          <div class="col-md-2 mb-1">
+            <div class="card" style="border-radius: 100%">
+              <img class="card-img-top" src="img/js.png" alt="Javascript" style="border-radius: 100%" />
+            </div>
+          </div>
+          <div class="col-md-2 mb-1">
+            <div class="card" style="border-radius: 100%">
+              <img class="card-img-top" src="img/php.png" alt="PHP" style="border-radius: 100%" />
+            </div>
+          </div>
+          <div class="col-md-2 mb-1">
+            <div class="card" style="border-radius: 100%">
+              <img class="card-img-top" src="img/html.png" alt="HTML" style="border-radius: 100%" />
+            </div>
+          </div>
+          <div class="col-md-2 mb-1">
+            <div class="card" style="border-radius: 100%">
+              <img class="card-img-top" src="img/css.png" alt="CSS" style="border-radius: 100%" />
+            </div>
+          </div>
+          <div class="col-md-2 mb-1">
+            <div class="card" style="border-radius: 100%">
+              <img class="card-img-top" src="img/github.jpg" alt="Github" style="border-radius: 100%" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Tools -->
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="card" style="margin: 40px; padding: 30px; background-color: #f2c7ad; border-radius: 20px">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h1>Projects</h1>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="container">
+              <div class="row mb-3">
+                <div class="col-lg-5 mb-4">
+                  <img class="rounded float-left" src="img/monitoring.png" alt="Online Monitoring of Microservices" style="width: 453px; height: 256px" />
+                </div>
+                <div class="col-lg-7">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5><b>Online Monitoring of Microservices with Apache Kafka</b></h5>
+                      <p style="text-align: justify">
+                        This is a final project for my bachelor degree in which I have to develop a monitoring of microservices application built on Apache Kafka. In order to monitor the microservices, I implemented an algorithm to get the
+                        number of request coming in and calculate the average time of processing the request. Afterwards, I display the result on a line graph and table visualisation on real-time basis.
+                      </p>
+                      <span style="font-size: 12px">Tools: KafkaJS, Bootstrap, Node.js, Express.js, MongoDB, Docker, Docker Compose, Microsoft Azure</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img class="card-img-top" src="img/project2.jpg" alt="Project 2" />
-              <div class="card-body">
-                <p class="card-text">A broad view of the stage of Behind the Strings VIII: Sgraffito.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img class="card-img-top" src="img/project3.jpg" alt="Project 3" />
-              <div class="card-body">
-                <p class="card-text">A theater packed with audiences waiting for Behind the Strings VIII: Sgraffito.</p>
+          <div class="row mb-3">
+            <div class="container">
+              <div class="row mb-3">
+                <div class="col-lg-5 mb-4">
+                  <img class="rounded float-left" src="img/research-system.jpg" alt="Research Paper Management System" style="width: 453px; height: 256px" />
+                </div>
+                <div class="col-lg-7">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5><b>Research Paper Management Systems</b></h5>
+                      <p style="text-align: justify">
+                        This is a small project for a module called Software Development Methodologies (CSIT314). This project is a paper management systems where there are authors that can submit papers and there are reviewers who can
+                        review paper. All the paper will be assigned by a conference chair to the reviewers. Lastly, there are system admin that will handle all the available account
+                      </p>
+                      <span style="font-size: 12px">Tools: PHP, HTML, CSS, MySQL</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#f2c7ad"
-          fill-opacity="1"
-          d="M0,256L48,234.7C96,213,192,171,288,133.3C384,96,480,64,576,90.7C672,117,768,203,864,224C960,245,1056,203,1152,181.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
     </section>
     <!-- End of Projects -->
 
-    <!-- Contact Me -->
-    <section id="social-media">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Social Media</h2>
+    <!-- Experiences -->
+    <section id="experiences">
+      <div class="card" style="margin: 40px; padding: 30px; background-color: #f2c7ad; border-radius: 20px">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h1>Experiences</h1>
+            </div>
           </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-3">
-            <div class="card">
-              <a href="https://www.instagram.com/allen_dylan_/"><img class="card-img-top" src="img/ig.jpg" alt="Instagram" /></a>
-              <div class="card-body">
-                <h3>Instagram</h3>
+          <div class="row justify-content-center mb-3">
+            <div class="col">
+              <div class="card" style="border-radius: 20px">
+                <div class="card-body">
+                  <h3 class="card-text text-center m-1">Behind the Strings VIII: Sgraffito</h3>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card">
-              <a href="https://www.facebook.com/profile.php?id=100009841530609"><img class="card-img-top" src="img/fb.png" alt="Facebook" /></a>
-              <div class="card-body">
-                <h3>Facebook</h3>
+          <div class="row justify-content-center">
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img class="card-img-top" src="img/project1.jpg" alt="Project 1" />
+                <div class="card-body">
+                  <p class="card-text">All parties involved in Behind the Strings VIII: Sgraffito.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img class="card-img-top" src="img/project2.jpg" alt="Project 2" />
+                <div class="card-body">
+                  <p class="card-text">A broad view of the stage of Behind the Strings VIII: Sgraffito.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img class="card-img-top" src="img/project3.jpg" alt="Project 3" />
+                <div class="card-body">
+                  <p class="card-text">A theater packed with audiences waiting for Behind the Strings VIII: Sgraffito.</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card">
-              <a href="https://www.linkedin.com/in/allen-dylan-antony-6341121bb/"><img class="card-img-top" src="img/linkedin.png" alt="Linkedin" /></a>
+          <div class="row text-center mb-3">
+            <div class="card" style="border-radius: 20px">
               <div class="card-body">
-                <h3>LinkedIn</h3>
+                <h3 class="card-text text-center m-1">Shopee Code League 2022</h3>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card">
-              <a href="https://github.com/Mr-ADA"><img class="card-img-top" src="img/github.jpg" alt="Github" /></a>
-              <div class="card-body">
-                <h3>Github</h3>
+          <div class="row justify-content-center">
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img class="card-img-top" src="img/shopee.png" alt="Project 1" />
+                <div class="card-body">
+                  <p class="card-text">I registered my team as Domba Allen in which it is derived from my name. I was the one gathered all the member and formed the group.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img class="card-img-top" src="img/shopee-badge.png" alt="Project 2" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Shopee Code League 2022's Digital Badge given to all participants. Badge can be accessed on: <a href="https://www.credly.com/badges/8acdddc0-e89f-4662-90a0-9642eee39ce4?source=linked_in_profile"> Shopee's Badge</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img class="card-img-top" src="img/shopee-souvenier.jpg" style="height: 20vw" alt="Project 3" />
+                <div class="card-body">
+                  <p class="card-text">Some souveniers given for participating in Shopee Code League 2022</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#c98358"
-          fill-opacity="1"
-          d="M0,224L40,197.3C80,171,160,117,240,128C320,139,400,213,480,229.3C560,245,640,203,720,186.7C800,171,880,181,960,197.3C1040,213,1120,235,1200,240C1280,245,1360,235,1400,229.3L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
+    </section>
+    <!-- End of Experiences -->
+
+    <!-- Contact Me -->
+    <section id="social-media" style="margin-bottom: 6rem">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h1>Let's Connect On</h1>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3 mb-1">
+            <div class="card" style="border-radius: 100%">
+              <a href="https://www.instagram.com/allen_dylan_/"><img class="card-img-top" style="border-radius: 100%" src="img/ig.jpg" alt="Instagram" /></a>
+            </div>
+          </div>
+          <div class="col-md-3 mb-1">
+            <div class="card" style="border-radius: 100%">
+              <a href="https://www.facebook.com/profile.php?id=100009841530609"><img class="card-img-top" style="border-radius: 100%" src="img/fb.png" alt="Facebook" /></a>
+            </div>
+          </div>
+          <div class="col-md-3 mb-1">
+            <div class="card" style="border-radius: 100%">
+              <a href="https://www.linkedin.com/in/allen-dylan-antony-6341121bb/"><img class="card-img-top" style="border-radius: 100%" src="img/linkedin.png" alt="Linkedin" /></a>
+            </div>
+          </div>
+          <div class="col-md-3 mb-1">
+            <div class="card" style="border-radius: 100%">
+              <a href="https://github.com/Mr-ADA"><img class="card-img-top" src="img/github.jpg" alt="Github" style="border-radius: 100%" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- End of Contact Me -->
 
     <!-- Footer -->
-    <footer class="text-white fw-bold text-center pb-4">
-      <p>Created by Allen Dylan Antony</p>
-    </footer>
+    <section id="footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col text-center">
+            <div class="card" style="border-radius: 20px; background-color: #f2c7ad">
+              <span>Created by Allen Dylan Antony</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- End of Footer -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
   </body>
 </html>
