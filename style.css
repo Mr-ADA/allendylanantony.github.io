@@ -1,67 +1,162 @@
+/* CSS RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* MY STYLE */
 body {
   background-color: #ffffff;
-  font-family: "Cabin";
+  font-family: "Poppins";
 }
 
-section div.card{
-  margin: 40px; 
-  padding: 30px; 
-  background-color: #f2c7ad; 
-  border-radius: 20px
-}
-section {
-  padding-top: 6rem;
-}
+/* NAVBAR */
 
-section#tools img, section#tools div.card{
-  border-radius: 100%;
-}
-
-section#projects img.rounded.float-left {
-  width: 100%; 
-  height: 100%; 
-  object-fit: fill
-}
-
-section#projects div.card-body span{
-  font-size: 12px
-}
-
-section#projects div.card-body p{
-  text-align: justify;
-}
-
-section#experiences {
-  background-color: #ffffff;
-}
-
-section#experiences div.card{
-  margin: 40px; 
-  padding: 30px; 
-  background-color: #f2c7ad; 
-  border-radius: 20px
-}
-
-section#social-media{
-  margin-bottom: 6rem;
-}
-
-section#social-media div
-.card, section#social-media img {
-  border-radius: 100%;
-}
-
-section#footer {
+#navbar a {
+  color: #000000;
   background-color: transparent;
-  padding-top: 1rem;
-  margin-bottom: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+nav#navbar div.container a:last-child:hover {
+  letter-spacing: 1px;
+  transition: 0.3s;
 }
 
-section#footer div.card{
-  border-radius: 20px; 
-  background-color: #f2c7ad
+#navbar .content-wrapper ul li a {
+  color: #000000;
+  background-color: transparent;
+  font-weight: 400;
+  text-decoration: none;
 }
 
+nav#navbar .content-wrapper ul li a:hover {
+  color: #b87954;
+}
+
+#navbar a span {
+  color: #b87954;
+}
 .navbar .content-wrapper {
   border-radius: 20px;
   background-color: #f2c7ad;
@@ -69,7 +164,186 @@ section#footer div.card{
   padding-right: 15px;
 }
 
+/* COMMON ELEMENTS */
 
+section div.card {
+  margin: 40px;
+  padding: 30px;
+  background-color: #f2c7ad;
+  border-radius: 20px;
+}
+section {
+  margin-top: 7rem;
+}
+
+section .row {
+  margin-top: 2.4rem;
+}
+
+section h1 {
+  font-weight: 700;
+  font-size: 2em;
+}
+/* JUMBOTRON */
+section#jumbotron .container .row .content-wrapper {
+  margin-top: 110px;
+}
+
+section#jumbotron .container .row .content-wrapper h1:nth-child(1) {
+  color: #b87954;
+  font-size: 42px;
+  font-weight: 900;
+}
+
+section#jumbotron .container .row .content-wrapper h1 {
+  font-size: 42px;
+  font-weight: 900;
+}
+
+section#jumbotron .container .row .content-wrapper .card {
+  background-color: #f2c7ad;
+}
+
+section#jumbotron .container .row .content-wrapper p {
+  font-size: 22px;
+}
+
+section#jumbotron .container .row img {
+  border-radius: 50%;
+  margin-left: 4.375rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  border: 4px solid #b87954;
+}
+
+/* ABOUT ME */
+section#about .container .col .card {
+  padding: 20px;
+  background-color: #f2c7ad;
+  border-radius: 20px;
+}
+
+section#about img {
+  float: left;
+  width: 25rem;
+  height: 25rem;
+  margin-right: 3rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  border-radius: 5%;
+  border: 4px solid #b87954;
+}
+
+section#about p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+section#about h3 {
+  font-weight: 400;
+  font-size: 30px;
+  text-align: left;
+}
+
+section#about span,
+section#tools span,
+section#social-media span {
+  color: #b87954;
+}
+
+/* TOOLS */
+section#tools img,
+section#tools div.card {
+  border-radius: 100%;
+  border: 4px solid #b87954;
+}
+
+section#tools .card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 11rem;
+  height: 11rem;
+  background-color: #ffffff;
+}
+
+section#tools .java {
+  background-image: url(img/java.png);
+}
+section#tools .html {
+  background-image: url(img/html.png);
+}
+section#tools .css {
+  background-image: url(img/css.png);
+}
+section#tools .php {
+  background-image: url(img/php.png);
+}
+section#tools .js {
+  background-image: url(img/js.png);
+}
+
+section#tools .github {
+  background-image: url(img/github.jpg);
+}
+
+/* SOCIAL MEDIA */
+
+section#social-media {
+  margin-bottom: 6rem;
+}
+
+section#social-media div.row div.card {
+  border: 4px solid #b87954;
+}
+section#social-media .card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15rem;
+  height: 15rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+section#social-media .instagram {
+  background-image: url(img/ig.jpg);
+}
+section#social-media .facebook {
+  background-image: url(img/fb.png);
+}
+section#social-media .linkedin {
+  background-image: url(img/linkedin.png);
+}
+section#social-media .github {
+  background-image: url(img/github.jpg);
+}
+
+/* FOOTER */
+footer {
+  background-color: #f2c7ad;
+  box-sizing: border-box;
+  padding-top: 1rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+footer div.navbar {
+  margin: auto;
+}
+
+footer div.links a {
+  margin: 0.5rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+}
+
+footer div.links a:hover {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* RESUME BUTTON */
 
 #resume {
   border-radius: 20px;
@@ -80,16 +354,4 @@ section#footer div.card{
   outline-style: auto;
   outline-color: #f2c7ad;
   background-color: #ffffff;
-}
-
-.about p {
-  font-size: 28px;
-}
-
-.about span {
-  font-size: 28px;
-}
-
-#projects .card {
-  background-color: #f5f5f5;
 }
