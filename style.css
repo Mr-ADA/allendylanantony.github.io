@@ -137,10 +137,18 @@ body {
   background-color: transparent;
   font-weight: 700;
   text-decoration: none;
+  font-size: 1.5em;
+}
+
+nav#navbar div.container a:first-child:hover {
+  letter-spacing: 0.1em;
+  transition: 0.3s;
+  cursor: default;
 }
 nav#navbar div.container a:last-child:hover {
-  letter-spacing: 1px;
+  letter-spacing: 0.1em;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 #navbar .content-wrapper ul li a {
@@ -148,29 +156,31 @@ nav#navbar div.container a:last-child:hover {
   background-color: transparent;
   font-weight: 400;
   text-decoration: none;
+  font-size: 1.1em;
 }
 
 nav#navbar .content-wrapper ul li a:hover {
   color: #b87954;
+  cursor: pointer;
 }
 
 #navbar a span {
   color: #b87954;
 }
 .navbar .content-wrapper {
-  border-radius: 20px;
+  border-radius: 1.18em;
   background-color: #f2c7ad;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* COMMON ELEMENTS */
 
 section div.card {
-  margin: 40px;
-  padding: 30px;
+  margin: 3.1rem;
+  padding: 2.9rem;
   background-color: #f2c7ad;
-  border-radius: 20px;
+  border-radius: 1.18em;
 }
 section {
   margin-top: 7rem;
@@ -186,17 +196,17 @@ section h1 {
 }
 /* JUMBOTRON */
 section#jumbotron .container .row .content-wrapper {
-  margin-top: 110px;
+  margin-top: 7.5rem;
 }
 
 section#jumbotron .container .row .content-wrapper h1:nth-child(1) {
   color: #b87954;
-  font-size: 42px;
+  font-size: 3.5em;
   font-weight: 900;
 }
 
 section#jumbotron .container .row .content-wrapper h1 {
-  font-size: 42px;
+  font-size: 3.5em;
   font-weight: 900;
 }
 
@@ -205,7 +215,7 @@ section#jumbotron .container .row .content-wrapper .card {
 }
 
 section#jumbotron .container .row .content-wrapper p {
-  font-size: 22px;
+  font-size: 1.7em;
 }
 
 section#jumbotron .container .row img {
@@ -217,9 +227,9 @@ section#jumbotron .container .row img {
 
 /* ABOUT ME */
 section#about .container .col .card {
-  padding: 20px;
+  padding: 1.2rem;
   background-color: #f2c7ad;
-  border-radius: 20px;
+  border-radius: 1.18rem;
 }
 
 section#about img {
@@ -229,19 +239,19 @@ section#about img {
   margin-right: 3rem;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.4);
   border-radius: 5%;
-  border: 4px solid #b87954;
+  border: 0.25rem solid #b87954;
 }
 
 section#about p {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.85em;
   line-height: 2rem;
   text-align: justify;
 }
 
 section#about h3 {
   font-weight: 400;
-  font-size: 30px;
+  font-size: 2.8em;
   text-align: left;
 }
 
@@ -252,17 +262,21 @@ section#social-media span {
 }
 
 /* TOOLS */
+
+section#tools div.container div.row:nth-child(2) {
+  margin: 0 auto;
+}
 section#tools img,
 section#tools div.card {
   border-radius: 100%;
-  border: 4px solid #b87954;
+  border: 0.25rem solid #b87954;
 }
 
 section#tools .card {
   background-repeat: no-repeat;
   background-size: cover;
-  width: 11rem;
-  height: 11rem;
+  width: 14rem;
+  height: 14rem;
   background-color: #ffffff;
 }
 
@@ -293,7 +307,7 @@ section#social-media {
 }
 
 section#social-media div.row div.card {
-  border: 4px solid #b87954;
+  border: 0.25rem solid #b87954;
 }
 section#social-media .card {
   background-repeat: no-repeat;
@@ -344,14 +358,53 @@ footer div.links a:hover {
 }
 
 /* RESUME BUTTON */
-
-#resume {
-  border-radius: 20px;
-  background-color: #f2c7ad;
-}
-
 #resume:hover {
   outline-style: auto;
   outline-color: #f2c7ad;
   background-color: #ffffff;
 }
+
+/* Media queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+
+  section#about p {
+    line-height: 120%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62%;
+  }
+
+  section#jumbotron img,
+  section#tools div.card,
+  section#social-media div.card {
+    margin: 2rem auto;
+  }
+}
+
+/* Phones */
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* Smaller Screen Phones */
+
+@media (max-width: 360px) {
+  html {
+    font-size: 35%;
+  }
+}
+
+/* section#jumbotron .container .row .content-wrapper h1 {
+    font-size: 99%;
+  } */
