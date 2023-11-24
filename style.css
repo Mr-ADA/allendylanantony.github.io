@@ -127,7 +127,11 @@ table {
 /* MY STYLE */
 body {
   background-color: #ffffff;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  padding: 1rem;
 }
 
 /* NAVBAR */
@@ -183,7 +187,7 @@ section div.card {
   border-radius: 1.18em;
 }
 section {
-  margin-top: 7rem;
+  margin-top: 3rem;
 }
 
 section .row {
@@ -225,7 +229,12 @@ section#jumbotron .container .row img {
   border: 4px solid #b87954;
 }
 
+section#jumbotron .container .row .content-wrapper {
+  text-align: center;
+}
+
 /* ABOUT ME */
+
 section#about .container .col .card {
   padding: 1.2rem;
   background-color: #f2c7ad;
@@ -233,10 +242,10 @@ section#about .container .col .card {
 }
 
 section#about img {
-  float: left;
+  /* float: left; */
   width: 25rem;
   height: 25rem;
-  margin-right: 3rem;
+  /* margin-right: 3rem; */
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.4);
   border-radius: 5%;
   border: 0.25rem solid #b87954;
@@ -273,6 +282,7 @@ section#tools div.card {
 }
 
 section#tools .card {
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
   width: 14rem;
@@ -310,6 +320,7 @@ section#social-media div.row div.card {
   border: 0.25rem solid #b87954;
 }
 section#social-media .card {
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
   width: 15rem;
