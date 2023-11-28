@@ -256,7 +256,7 @@ section#about p {
 section#about h3 {
   font-weight: 400;
   font-size: 2.8em;
-  text-align: left;
+  text-align: center;
 }
 
 section#about span,
@@ -268,7 +268,9 @@ section#social-media span {
 
 /* EDUCATION */
 section#education .row .col .card {
-  width: 95%;
+  width: 84%;
+  margin: 2% auto;
+  padding: 2rem;
   height: 20rem;
   overflow: hidden;
   padding: 0;
@@ -288,7 +290,7 @@ section#education img {
 section#education .row .col .card h2 {
   font-weight: 800;
   color: #b87954;
-  font-size: 2em;
+  font-size: 2.2em;
 }
 
 section#education .row .col .card h4 {
@@ -412,7 +414,7 @@ footer div.links a:hover {
 /* Laptop */
 @media (max-width: 1366px) {
   html {
-    font-size: 75%;
+    font-size: 70%;
   }
 
   section#about p {
@@ -423,7 +425,7 @@ footer div.links a:hover {
 /* Tablet */
 @media (max-width: 758px) {
   html {
-    font-size: 62%;
+    font-size: 50%;
   }
 
   section#jumbotron img,
@@ -436,7 +438,7 @@ footer div.links a:hover {
 /* Phones */
 @media (max-width: 450px) {
   html {
-    font-size: 50%;
+    font-size: 35%;
   }
 }
 
@@ -444,6 +446,6 @@ footer div.links a:hover {
 
 @media (max-width: 360px) {
   html {
-    font-size: 35%;
+    font-size: 20%;
   }
 }
