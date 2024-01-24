@@ -268,7 +268,7 @@ section#social-media span {
 
 /* EDUCATION */
 section#education .row .col .card {
-  width: 84%;
+  width: 90%;
   margin: 2% auto;
   padding: 2rem;
   height: 20rem;
@@ -281,6 +281,9 @@ section#education .row .col .card {
   line-height: 2.5em;
 }
 
+section#education .col.p-1 {
+  padding: 0.5em !important;
+}
 section#education img {
   margin-top: -3rem;
   width: 30rem;
@@ -290,13 +293,13 @@ section#education img {
 section#education .row .col .card h2 {
   font-weight: 800;
   color: #b87954;
-  font-size: 2.2em;
+  font-size: 2.5em;
 }
 
 section#education .row .col .card h4 {
   font-weight: 600;
   color: #000000;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 section#education .row .col .card p {
@@ -304,6 +307,63 @@ section#education .row .col .card p {
   color: #000000;
   font-size: 1em;
 }
+
+/* PROJECTS  */
+
+section#projects .row .col .card {
+  width: 90%;
+  margin: 2% auto;
+  height: 61em;
+  overflow: hidden;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 2em;
+  background-color: #ffffff;
+  border: 3px solid #b87954;
+  line-height: 2.5em;
+}
+
+section#projects .row .card img {
+  width: 100%;
+}
+
+section#projects .row .card h1 {
+  display: inline-block;
+  margin-bottom: 2rem !important;
+  text-align: center;
+  font-weight: 800;
+  color: #b87954;
+  font-size: 2.5em;
+}
+
+section#projects .row .card h3 {
+  display: inline-block;
+  margin-top: 1rem !important;
+  text-align: center;
+  font-weight: 500;
+  color: #b87954;
+  font-size: 1.5em;
+}
+
+section#projects .row .card p {
+  text-justify: distribute;
+  display: inline-block;
+  margin: 1.5rem !important;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.7em;
+}
+
+section#projects .row .card a,
+section#projects .row .card span {
+  font-weight: 400;
+  font-size: 1.7em;
+}
+
+section#projects .col.p-1 {
+  text-align: center;
+}
+
 /* TOOLS */
 
 section#tools div.container div.row:nth-child(2) {
@@ -316,11 +376,12 @@ section#tools div.card {
 }
 
 section#tools .card {
+  margin-left: 2em;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 14rem;
-  height: 14rem;
+  width: 13rem;
+  height: 13rem;
   background-color: #ffffff;
 }
 
@@ -340,8 +401,8 @@ section#tools .js {
   background-image: url(img/js.png);
 }
 
-section#tools .github {
-  background-image: url(img/github.jpg);
+section#tools .react {
+  background-image: url(img/react.png);
 }
 
 /* SOCIAL MEDIA */
