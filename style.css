@@ -124,6 +124,10 @@ table {
   border-spacing: 0;
 }
 
+html {
+  scroll-snap-type: y mandatory;
+}
+
 /* MY STYLE */
 body {
   background-color: #ffffff;
@@ -179,15 +183,18 @@ nav#navbar .content-wrapper ul li a:hover {
 }
 
 /* COMMON ELEMENTS */
-
 section div.card {
-  margin: 3.1rem;
+  margin: 3.3rem;
   padding: 2.9rem;
   background-color: #f2c7ad;
   border-radius: 1.18em;
 }
 section {
-  margin-top: 3rem;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  scroll-margin-top: 20px;
+  margin-top: 20rem;
+  margin-bottom: 14rem;
 }
 
 section .row {
@@ -231,6 +238,12 @@ section#jumbotron .container .row .content-wrapper {
   text-align: center;
 }
 
+/* JUMBOTRON */
+section#jumbotron {
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
+
 /* ABOUT ME */
 
 section#about .container .col .card {
@@ -266,12 +279,55 @@ section#social-media span {
   color: #b87954;
 }
 
+/* EXPERIENCES */
+
+section#experiences .row .col .card {
+  width: 90%;
+  margin: 2% auto;
+  padding: 0.2rem 2rem 2rem 1rem;
+  height: 38rem;
+  overflow: hidden;
+  background-color: transparent;
+  border-radius: 6em;
+  background-color: #ffffff;
+  border: 3px solid #b87954;
+  line-height: 2.5em;
+}
+
+section#experiences .col.p-1 {
+  padding: 0.5em !important;
+}
+section#experiences img {
+  margin-top: -0.5rem;
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+}
+
+section#experiences .row .col .card h2 {
+  font-weight: 800;
+  color: #b87954;
+  font-size: 2.5em;
+}
+
+section#experiences .row .col .card h4 {
+  font-weight: 600;
+  color: #000000;
+  font-size: 1.5em;
+}
+
+section#experiences .row .col .card p {
+  font-weight: 300;
+  color: #000000;
+  font-size: 1em;
+}
+
 /* EDUCATION */
 section#education .row .col .card {
   width: 90%;
   margin: 2% auto;
   padding: 2rem;
-  height: 20rem;
+  height: 19rem;
   overflow: hidden;
   padding: 0;
   background-color: transparent;
@@ -285,9 +341,10 @@ section#education .col.p-1 {
   padding: 0.5em !important;
 }
 section#education img {
-  margin-top: -3rem;
+  margin-top: -8.5rem;
   width: 30rem;
-  height: 30rem;
+  height: 31rem;
+  object-fit: contain;
 }
 
 section#education .row .col .card h2 {
@@ -308,12 +365,18 @@ section#education .row .col .card p {
   font-size: 1em;
 }
 
+section#education .row .col .card h3 {
+  font-weight: 600;
+  color: #000000;
+  font-size: 1em;
+}
+
 /* PROJECTS  */
 
 section#projects .row .col .card {
   width: 90%;
   margin: 2% auto;
-  height: 61em;
+  height: 70em;
   overflow: hidden;
   padding: 0;
   background-color: transparent;
@@ -383,6 +446,7 @@ section#tools .card {
   width: 13rem;
   height: 13rem;
   background-color: #ffffff;
+  background-position: center;
 }
 
 section#tools .java {
@@ -463,11 +527,18 @@ footer div.links a:hover {
   color: #ffffff;
 }
 
-/* RESUME BUTTON */
-#resume:hover {
-  outline-style: auto;
-  outline-color: #f2c7ad;
-  background-color: #ffffff;
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(30%);
+  transition: all 0.5s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+  transition: all 0.5s;
 }
 
 /* Media queries */
@@ -508,5 +579,11 @@ footer div.links a:hover {
 @media (max-width: 360px) {
   html {
     font-size: 20%;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
   }
 }
